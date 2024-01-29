@@ -1,4 +1,3 @@
-//Programming Challenge 18
 //Tic-Tac-Toe Game
 #include <iostream>
 #include <vector>
@@ -104,8 +103,8 @@ void playerChoice(char player) {
 }
 
 
-bool letterPlace(char board[][ARRAY_LENGTH], int rowNum, int colNum, char player) {
-	bool result;
+bool letterPlace(char [][ARRAY_LENGTH], int, int, char player) {
+	bool result = false;
 
 	if (gameBoard[rowNum - 1][colNum - 1] == '*') {
 		for (row = 0; row < ARRAY_LENGTH; row++) {
